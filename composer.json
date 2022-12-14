@@ -1,11 +1,19 @@
 {
-    "name": "kineoapac/totara-webservice_restful",
+    "name": "tke/apac-webservice-restful",
+    "description": "A REStful webservice plugin for Moodle LMS",
     "type": "totara-webservice",
     "require": {
         "kineo/installers": "~1.3",
-        "tke/tke": ">=13.0"
+        "tke/tke": ">=13.4"
     },
     "extra": {
-        "installer-name": "restful"
+        "installer-name": "restful",
+        "kineo": {
+            "code-standards": "moodle",
+            "has-config-init": false,
+            "has-core-modifications": false,
+            "has-htaccess": false,
+            "has-totara-component": false
+        }
     }
 }
